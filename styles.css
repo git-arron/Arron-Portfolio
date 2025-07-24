@@ -192,7 +192,8 @@ h1, #about-me-section p{
 }
 .image-certificate{
     margin:0;
-    width: 270px;
+    width: 100%;
+    max-width:270px;
     height:200px;
     border-radius:10px;
 }
