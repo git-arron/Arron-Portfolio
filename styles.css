@@ -1,0 +1,222 @@
+body{
+   background: linear-gradient(to right, #e6c699, #d9a77e, #b57745);
+    color:#111;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top: 90px;
+}
+*{
+    box-sizing:border-box;
+}
+header{
+    display:flex;
+    background: linear-gradient(to left, #e6c699, #d9a77e, #b57745);
+    padding:15px 15px 0 15px;
+    border-bottom:1px solid black;
+    box-shadow: 0px 1px 6px rgb(0,0,0);
+    position:sticky;
+    width:100%;
+    top:0;
+    align-items:center;
+    z-index: 1;
+}
+header, #header-right{
+    display:flex;
+    justify-content:space-between;
+}
+#header-left{
+    vertical-align:center;
+    background: linear-gradient(90deg, #001f4d, #003366, #00509e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+nav a{
+    text-decoration:none;
+    display:inline-block;
+    color:#111;
+    font-size:1.2rem;
+    transition: transform 0.3s ease;
+}
+nav li{
+    display:inline;
+    list-style-type:none;
+    margin-right:10px;
+    
+}
+
+/*state of navigation bar*/
+nav a:hover{
+    color:navy;
+    transform:scale(1.05);
+}
+nav a:active{
+    color:white;
+}
+
+#about-me-section{
+    margin-top: 8%;
+    display:block;
+    width:70%;
+    text-align:center;
+    margin-left:15%;
+}
+h1, h2{
+    vertical-align:center;
+    background: linear-gradient(90deg, #001f4d, #003366, #00509e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+h1, #about-me-section p{
+    margin-bottom:40px;
+}
+#about-me-section p{
+    font-size:20px;
+}
+#about-me-section img{
+    width:200px;
+}
+
+/*skill section*/
+#skills-section{
+    width: 90%;
+    margin:auto;
+    padding:50px 0px 100px 0;
+}
+
+#skills-section h2{
+    text-align:center;
+    font-size:48px;
+}
+.skill-container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+    background-color: rgba(255, 255, 255, 0.4); /* light glass effect */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    backdrop-filter: blur(2px);
+    width:150px;
+    height:150px;
+}
+#skills-flex-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    row-gap:15px;
+    flex-wrap:wrap;
+}
+
+.skill-container img{
+    width:50px;
+}
+.skill-container h4{
+    margin-top:5px;
+    margin-bottom:0px;
+    color: rgb(153, 130, 2);
+}
+
+
+    
+#certificates-section{
+    width:80%;
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+    padding-top:70px;
+    padding-bottom:30px;
+    margin-top:40px;
+    margin-left:10%;
+    margin-right:10%;  
+    background: linear-gradient(to right, #fff4e0, #f5d67b);
+}
+#certificates-header{
+    text-align:center;
+    padding:0px;
+    margin:-20px 0px 15px 0px;
+    font-size:48px;   
+}
+#certificate-flex-container{
+    display:flex;
+    justify-content:center;
+    row-gap:15px;
+    column-gap:5px;
+    flex-wrap:wrap;
+}
+.certificate-container{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    width:300px;
+    height:365px;
+    padding:15px 15px 10px 15px;
+    border-radius:10px;
+    background-color:#906528;
+    color:white;
+    font-size:18px;
+    margin:10px 10px 0px 10px;
+    transition: transform 0.3s ease-out;
+}
+.certificate-container:hover, .skill-container:hover{
+    transform:scale(1.05);
+    transform-style:ease;
+}
+.certificate-platform{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.certificate-platform p{
+    margin: 0px 0px 15px 0px;
+    opacity:80%;
+}
+.title-certificate h3{
+    margin: 10px 0px 10px 0px;
+    opacity:80%;
+}
+.image-certificate{
+    margin:0;
+    width: 270px;
+    height:200px;
+    border-radius:10px;
+}
+
+.link-to-certificate a{
+    background: linear-gradient(90deg, #ffe29e, #fffbe6, #f4d489);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+section{
+    margin-top:100px;
+}
+#contact-section{
+    margin-top:60px;
+    height:100px;
+}
+#contact-section img{
+    width:50px;
+}
+.social-links-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    column-gap:15px;
+}
