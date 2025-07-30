@@ -207,7 +207,7 @@ h1, h2{
     margin-top:40px;
     margin-left:10%;
     margin-right:10%;  
-    background: linear-gradient(to right, #fff4e0, #f5d67b);
+    background: linear-gradient(to bottom, #e6c699, #d9a77e, #b57745);
 }
 #certificates-header{
     text-align:center;
