@@ -121,7 +121,7 @@ h1, #about-me-section p{
     padding:50px 0px 100px 0;
 }
 
-#skills-section h2{
+#skills-section h2, #about-me-section h2{
     text-align:center;
     font-size:48px;
 }
