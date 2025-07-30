@@ -9,9 +9,47 @@ html{
     scroll-padding-top: 90px;
     font-size:20px;
 }
+section{
+    margin-top:100px;
+}
+
 *{
     box-sizing:border-box;
 }
+@media (max-width: 768px) {
+    body{
+        padding-top:85px;
+    }
+    #landing-section {
+        scroll-margin-top: 100px;
+        margin-top:10%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #landing-section img#profile-picture {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #landing-section h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    #short-description {
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+
+    .contact-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
 #landing-section, p{
     margin-bottom:40px;
 }
@@ -28,9 +66,10 @@ html{
     position:fixed;
     top:0;
     width:100%;
+    height:85px;
     border-bottom: solid black 1px;
     box-shadow: 0 2px 8px rgb(0,0,0,0.2);
-    z-index:1;
+    z-index:999;
 }
 
 #header-left-initials {
@@ -59,17 +98,18 @@ nav a {
 }
 
 @media (max-width:768px) {
+
     #header-right-nav-bar {
         display: none;
         flex-direction: column;
         background: linear-gradient(to left, #e6c699, #d9a77e);
         position: absolute;
-        top: 68px;
+        top: 85px;
         right: 0;
         padding: 10px 10px 5px 10px;
         border-radius: 0 0 8px 8px;
         min-width: 150px;
-        box-shadow: 0 2px 6px rgb(0,0,0.0.1);
+        box-shadow: 0 2px 9px rgb(0,0,0.0.1);
     }
 
         #header-right-nav-bar.show {
@@ -102,6 +142,14 @@ nav a:active{
 }
 
 /*landing section*/
+
+#landing-section{
+    scroll-margin-top:90px;
+}
+
+
+
+
 .contact-button {
   display: inline-block;
   padding: 15px 30px;
@@ -125,8 +173,12 @@ nav a:active{
 }
 
 
+#about-me-section {
+  scroll-margin-top: 90px;
+}
+
 #about-me-section, #landing-section{
-    margin-top: 8%;
+    margin-top: 10%;
     display:block;
     width:70%;
     text-align:center;
@@ -141,6 +193,7 @@ h1, h2{
     color: transparent;
     font-weight: bold;
 }
+
 #about-me-section p{
     margin-bottom:40px;
 }
@@ -149,9 +202,25 @@ h1, h2{
     width:200px;
     
 }
+@media (max-width:768px) {
+    #about-me-section p{
+        font-size:16px;
+        margin-top:15px;
+    }
+    #about-me-section #p1{
+        margin-bottom:30px;
+    }
+    body #about-me-section {
+        scroll-margin-top: 10px;
+    }
+    
+}
 
 /*skill section*/
+
+
 #skills-section{
+    scroll-margin-top: -50px;
     width: 90%;
     margin:auto;
     padding:50px 0px 100px 0;
@@ -190,23 +259,75 @@ h1, h2{
 .skill-container img{
     width:50px;
 }
+.skill-container #canva{
+        width:75px;
+    }
 .skill-container h4{
     margin-top:5px;
     margin-bottom:0px;
-    color: rgb(153, 130, 2);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 
-    
+@media (max-width: 768px) {
+    #skills-section{
+        scroll-margin-top:-40px;
+    }
+    .skill-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;         
+        gap: 10px;
+        width: auto;                
+        min-width: 120px;           
+        height: auto;
+        padding: 10px 13px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .skill-container img {
+        width: 25px;
+        height: 25px;
+    }
+    .skill-container #canva{
+        width:50px;
+    }
+
+    .skill-container h4 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    }
+
+    #skills-flex-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+
+
+
 #certificates-section{
+    scroll-margin-top: 20px;
     width:80%;
-    border-top-right-radius:50px;
-    border-top-left-radius:50px;
+    border-radius:50px;
     padding-top:70px;
     padding-bottom:30px;
     margin-top:40px;
     margin-left:10%;
     margin-right:10%;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to bottom, #e6c699, #d9a77e, #b57745);
 }
 #certificates-header{
@@ -272,14 +393,62 @@ h1, h2{
     color: transparent;
     font-weight: bold;
 }
-section{
-    margin-top:100px;
+
+@media (max-width: 768px) {
+    #certificates-section {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 45px;
+        padding-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    #certificates-header {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    #certificate-flex-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 18px;
+        padding: 0 8px;
+    }
+
+    .certificate-container {
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .image-certificate {
+        height: auto;
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .title-certificate h3 {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+
+    .certificate-platform p,
+    .link-to-certificate a {
+        font-size: 13px;
+    }
 }
-#contact-section{
+
+
+#social-section{
+  scroll-margin-top: 80px;
     margin-top:60px;
     height:100px;
 }
-#contact-section img{
+#social-section img{
     width:50px;
 }
 .social-links-container{
@@ -289,3 +458,38 @@ section{
     align-items:center;
     column-gap:15px;
 }
+
+footer {
+    text-align: center;
+    padding:20px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #555;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+#social-section{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+#social-section p{
+    margin-bottom:30px;
+}
+.social-links-container {
+    margin-top: 10px;
+}
+
+.social-links-container a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.social-links-container img {
+    width: 50px;
+}
+
+.social-links-container a:hover {
+    transform: scale(1.1);
+}
+
