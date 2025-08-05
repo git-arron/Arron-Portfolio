@@ -330,6 +330,9 @@ section h1, section h2{
     #skills-section{
         scroll-margin-top:-90px;
     }
+    #skills-section h2{
+        margin-bottom:15px;
+    }
     .skill-container {
         display: flex;
         align-items: center;
