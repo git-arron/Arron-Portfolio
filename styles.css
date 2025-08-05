@@ -196,6 +196,7 @@ nav a:active{
     }
     #landing-section h1{
         font-size:30px;
+        white-space:nowrap;
     }
     #landing-section p{
         font-size:20px;
