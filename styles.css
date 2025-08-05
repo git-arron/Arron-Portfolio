@@ -328,7 +328,7 @@ section h1, section h2{
 
 @media (max-width: 768px) {
     #skills-section{
-        scroll-margin-top:-10px;
+        scroll-margin-top:-90px;
     }
     .skill-container {
         display: flex;
