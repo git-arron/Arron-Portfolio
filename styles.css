@@ -264,7 +264,7 @@ section h1, section h2{
         margin-bottom:10px;
     }
     body #about-me-section {
-        scroll-margin-top: -1px;
+        scroll-margin-top: 10px;
     }
     
 }
@@ -328,7 +328,7 @@ section h1, section h2{
 
 @media (max-width: 768px) {
     #skills-section{
-        scroll-margin-top:-40px;
+        scroll-margin-top:-10px;
     }
     .skill-container {
         display: flex;
