@@ -1,269 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>John Arron Website Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfolio of John Arron Mojico, a BSIT student, aspiring web developer, and virtual assistant skilled in web development, productivity tools, and creative design.">
+    <meta name="theme-color" content="#252c39">
+
+    <title>John Arron Mojico | Webfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="nav-bar">
-        <div id="header-left-initials">
-            <h2>JAM</h2>
-        </div>
-        <div id="menu-container">
-            <div id="toggle-button">
-                <span>&#9776;</span>
-            </div>
-            <nav id="header-right-nav-bar">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#landing-section" class="brand" aria-label="Go to home section">
+                <span class="brand-mark">JAM</span>
+                <span class="brand-name">John Arron</span>
+            </a>
+
+            <button class="menu-toggle" id="toggle-button" type="button" aria-label="Open navigation menu" aria-controls="header-right-nav-bar" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-links" id="header-right-nav-bar">
                 <a href="#landing-section">Home</a>
                 <a href="#about-me-section">About Me</a>
                 <a href="#skills-section">Skills</a>
+                <a href="#projects-section">Projects</a>
                 <a href="#certificates-section">Certificates</a>
                 <a href="#social-section">Socials</a>
-            </nav>
-
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+        <section id="landing-section" class="hero section-block">
+            <div class="hero-content reveal">
+                <p class="eyebrow">BSIT Student | Aspiring Web Developer | Virtual Assistant</p>
+                <h1>John Arron Mojico</h1>
+                <p class="hero-description">
+                    I build clean, responsive, and practical web interfaces while combining technical skills with admin, design, and support experience.
+                </p>
+                <div class="hero-actions" aria-label="Main actions">
+                    <a href="#projects-section" class="button button-primary">View Projects</a>
+                    <a href="mailto:johnarronmojico24@gmail.com" class="button button-secondary">Email Me</a>
+                </div>
+            </div>
 
-        <section id="landing-section">
-            <img id="profile-picture" src="Profile.png" alt="My Profile Picture">
-            <h1>John Arron Mojico</h1>
-            <p id="short-description">I am a resourceful and adaptable individual who thrives in both creative and technical tasks, always ready to learn, assist, and contribute.</p>
-            <a href="mailto:johnarronmojico24@gmail.com" class="contact-button">Email Me</a>
-        </section>
-
-        <section id="about-me-section">
-            
-            <h2>About Me</h2>
-            
-            <p id="p1">
-                I’m a passionate and dependable BSIT student from PUP who aspire to be a Web Developer. I have real-world experience in admin and creative work. Organized, resourceful, and quick to adapt, I bring fresh ideas and reliable execution to every task.
-            </p>
-            <p>
-                I am currently a working student and Served as a student assistant at our university's OJT Office, I assist in client handling, document processing, image editing, presentations, research, data gathering, and creative design. I am flexible and detail-oriented, capable of adapting to different tasks whether technical, creative, or support-related. I aim to grow continuously as a full-stack web developer and a dependable virtual assistant who adds real value through skill, dedication, and smart solutions.
-            </p>
-        </section>
-
-        <section id="skills-section">
-            <h2>Skills</h2>
-            <div id="skills-flex-container">
-                <!-- Tech Skills -->
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/html.png" alt="HTML logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>HTML</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/css-3.png" alt="CSS logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>CSS</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/java-script.png" alt="JavaScript logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>JavaScript</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/c-.png" alt="C++ logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>C++</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/java.png" alt="Java logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Java</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/python.png" alt="Python logo">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Python</h4>
-                    </div>
-                </div>
-
-                <!-- VA & Office Skills -->
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/word.png" alt="Microsoft Word">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Microsoft Word</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/excel.png" alt="Microsoft Excel">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Microsoft Excel</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/powerpoint.png" alt="Microsoft PowerPoint">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Microsoft PowerPoint</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/microsoft-outlook.png" alt="Microsoft Outlook">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Microsoft Outlook</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img src="skills/business.png" alt="Microsoft Teams">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Microsoft Teams</h4>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-logo-image">
-                        <img id="canva" src="skills/canva.png" alt="Canva">
-                    </div>
-                    <div class="skill-name">
-                        <h4>Canva Design</h4>
-                    </div>
-                </div>
+            <div class="hero-image-wrap reveal">
+                <img id="profile-picture" src="Profile.png" alt="Portrait of John Arron Mojico" loading="eager">
             </div>
         </section>
 
-        <section id="certificates-section">
-            <h2 id="certificates-header">Certificates</h2>
-            <div id="certificate-flex-container">
-                <!-- Certificate 1 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/webDevelopmentCOC.jpg" alt="Web Development Certificate">
-                    <div class="title-certificate">
+        <section id="about-me-section" class="section-block reveal">
+            <div class="section-header">
+                <p class="eyebrow">Get to know me</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-card">
+                <p>
+                    I am a passionate and dependable BSIT student from PUP, aspiring to become a web developer. I have real-world experience in administrative support, client handling, document processing, image editing, presentations, research, data gathering, and creative design.
+                </p>
+                <p>
+                    As a working student and student assistant at our university’s OJT Office, I have learned how to stay organized, adapt quickly, and handle both technical and creative tasks with reliability. My goal is to grow as a full-stack web developer and virtual assistant who can provide practical, smart, and valuable solutions.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills-section" class="section-block reveal">
+            <div class="section-header">
+                <p class="eyebrow">What I can do</p>
+                <h2>Skills</h2>
+                <p class="section-description">A balanced mix of development, productivity, design, and support skills.</p>
+            </div>
+
+            <div class="skill-category-grid">
+                <article class="skill-category-card">
+                    <h3>Front-End Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <img src="skills/html.png" alt="HTML logo" loading="lazy">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/css-3.png" alt="CSS logo" loading="lazy">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/java-script.png" alt="JavaScript logo" loading="lazy">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-category-card">
+                    <h3>Programming</h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <img src="skills/c-.png" alt="C++ logo" loading="lazy">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/java.png" alt="Java logo" loading="lazy">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/python.png" alt="Python logo" loading="lazy">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-category-card">
+                    <h3>Productivity Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <img src="skills/word.png" alt="Microsoft Word logo" loading="lazy">
+                            <span>Word</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/excel.png" alt="Microsoft Excel logo" loading="lazy">
+                            <span>Excel</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/powerpoint.png" alt="Microsoft PowerPoint logo" loading="lazy">
+                            <span>PowerPoint</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/microsoft-outlook.png" alt="Microsoft Outlook logo" loading="lazy">
+                            <span>Outlook</span>
+                        </div>
+                        <div class="skill-pill">
+                            <img src="skills/business.png" alt="Microsoft Teams logo" loading="lazy">
+                            <span>Teams</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-category-card">
+                    <h3>Design and Creative Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <img src="skills/canva.png" alt="Canva logo" loading="lazy">
+                            <span>Canva Design</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects-section" class="section-block reveal">
+            <div class="section-header">
+                <p class="eyebrow">Selected work</p>
+                <h2>Projects</h2>
+                <p class="section-description">Projects and concepts that show my web development, design, and productivity skills.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">01</div>
+                    <h3>Personal Webfolio</h3>
+                    <p>
+                        A responsive personal portfolio website built to showcase my skills, certificates, and professional background.
+                    </p>
+                    <div class="tag-list" aria-label="Technologies used">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://johnarronmojico.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/git-arron/Arron-Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">02</div>
+                    <h3>Student Assistant Task Tracker</h3>
+                    <p>
+                        A simple productivity concept for organizing office-related tasks, documents, and student records.
+                    </p>
+                    <div class="tag-list" aria-label="Project focus areas">
+                        <span>UI Design</span>
+                        <span>Productivity</span>
+                        <span>Web App Concept</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="mailto:johnarronmojico24@gmail.com?subject=Student%20Assistant%20Task%20Tracker%20Inquiry">Ask for Details</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">03</div>
+                    <h3>Creative Design Portfolio</h3>
+                    <p>
+                        A collection of visual materials, presentations, and creative layouts made for academic and office use.
+                    </p>
+                    <div class="tag-list" aria-label="Project focus areas">
+                        <span>Canva</span>
+                        <span>Presentation Design</span>
+                        <span>Visual Design</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="mailto:johnarronmojico24@gmail.com?subject=Creative%20Design%20Portfolio%20Samples">Request Samples</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificates-section" class="section-block reveal">
+            <div class="section-header">
+                <p class="eyebrow">Proof of learning</p>
+                <h2>Certificates</h2>
+                <p class="section-description">Certificates that support my technical and creative development.</p>
+            </div>
+
+            <div class="certificate-grid">
+                <article class="certificate-card">
+                    <img src="certificates/webDevelopmentCOC.jpg" alt="Web Development certificate from Sololearn" loading="lazy">
+                    <div class="certificate-content">
                         <h3>Web Development</h3>
+                        <p>Sololearn | 2025</p>
+                        <a href="https://drive.google.com/file/d/1lGnFGsToYIYo1xXrbDnec5VMkHXf677c/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>Sololearn</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/1lGnFGsToYIYo1xXrbDnec5VMkHXf677c/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Certificate 2 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/LearningPythonCertificate.jpg" alt="Learning Python Certificate">
-                    <div class="title-certificate">
+                <article class="certificate-card">
+                    <img src="certificates/LearningPythonCertificate.jpg" alt="Learning Python certificate from LinkedIn Learning" loading="lazy">
+                    <div class="certificate-content">
                         <h3>Learning Python</h3>
+                        <p>LinkedIn Learning | 2023</p>
+                        <a href="https://drive.google.com/file/d/1nVD1q2jqPHeF0ldcWV1ExZnsiVwXQ3M1/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>LinkedIn Learning</p>
-                        <p>2023</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/1nVD1q2jqPHeF0ldcWV1ExZnsiVwXQ3M1/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Certificate 3 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/PythonDataStructuresandAlgorithm.jpg" alt="Python Data Structures Certificate">
-                    <div class="title-certificate">
+                <article class="certificate-card">
+                    <img src="certificates/PythonDataStructuresandAlgorithm.jpg" alt="Python Data Structures and Algorithm certificate from LinkedIn Learning" loading="lazy">
+                    <div class="certificate-content">
                         <h3>Python Data Structures and Algorithm</h3>
+                        <p>LinkedIn Learning | 2025</p>
+                        <a href="https://drive.google.com/file/d/1dlyHlRUKNtcttQXb5TJBPrXr8QhrLFeg/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>LinkedIn Learning</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/1dlyHlRUKNtcttQXb5TJBPrXr8QhrLFeg/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Certificate 4 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/CSSEssentialTraining.jpg" alt="Python Data Structures Certificate">
-                    <div class="title-certificate">
+                <article class="certificate-card">
+                    <img src="certificates/CSSEssentialTraining.jpg" alt="CSS Essential Training certificate from LinkedIn Learning" loading="lazy">
+                    <div class="certificate-content">
                         <h3>CSS Essential Training</h3>
+                        <p>LinkedIn Learning | 2025</p>
+                        <a href="https://drive.google.com/file/d/1WtwsL_cTqP5lVVlVzRo0l5Igme6iJSfs/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>LinkedIn Learning</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/1WtwsL_cTqP5lVVlVzRo0l5Igme6iJSfs/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
 
-            <!-- Certificate 5 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/UXDesignforDevelopers.jpg" alt="Python Data Structures Certificate">
-                    <div class="title-certificate">
+                <article class="certificate-card">
+                    <img src="certificates/UXDesignforDevelopers.jpg" alt="UX Design for Developers certificate from LinkedIn Learning" loading="lazy">
+                    <div class="certificate-content">
                         <h3>UX Design for Developers</h3>
+                        <p>LinkedIn Learning | 2025</p>
+                        <a href="https://drive.google.com/file/d/1-y58Law4fIqRGbLX2u7jEXCDtx9OAc-c/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>LinkedIn Learning</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/1-y58Law4fIqRGbLX2u7jEXCDtx9OAc-c/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Certificate 6 -->
-                <div class="certificate-container">
-                    <img class="image-certificate" src="certificates/LearningGitandGitHub.jpg" alt="Python Data Structures Certificate">
-                    <div class="title-certificate">
-                        <h3>Learning Git and Github</h3>
+                <article class="certificate-card">
+                    <img src="certificates/LearningGitandGitHub.jpg" alt="Learning Git and GitHub certificate from LinkedIn Learning" loading="lazy">
+                    <div class="certificate-content">
+                        <h3>Learning Git and GitHub</h3>
+                        <p>LinkedIn Learning | 2025</p>
+                        <a href="https://drive.google.com/file/d/10RVGExI9fb6aOpimDVqgBrC_sKm6ARZ2/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
                     </div>
-                    <div class="certificate-platform">
-                        <p>LinkedIn Learning</p>
-                        <p>2025</p>
-                    </div>
-                    <div class="link-to-certificate">
-                        <a href="https://drive.google.com/file/d/10RVGExI9fb6aOpimDVqgBrC_sKm6ARZ2/view?usp=sharing">View Certificate</a>
-                    </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <section id="social-section">
-            <p>&copy; 2025 John Arron Mojico. All rights reserved.</p>
-            <div class="social-links-container">
-                <a href="https://www.facebook.com/profile.php?id=61577945566890">
-                    <img src="socials/facebook.png" alt="Facebook">
+    <footer class="site-footer" id="social-section">
+        <div class="footer-content">
+            <p class="footer-title">Let’s connect</p>
+            <div class="social-links-container" aria-label="Social media links">
+                <a href="https://www.facebook.com/profile.php?id=61577945566890" target="_blank" rel="noopener noreferrer" aria-label="Visit John Arron Mojico on Facebook">
+                    <img src="socials/facebook.png" alt="" aria-hidden="true" loading="lazy">
+                    <span>Facebook</span>
                 </a>
-                <a href="https://www.instagram.com/arrunntot/">
-                    <img src="socials/instagram.png" alt="Instagram">
+                <a href="https://www.instagram.com/arrunntot/" target="_blank" rel="noopener noreferrer" aria-label="Visit John Arron Mojico on Instagram">
+                    <img src="socials/instagram.png" alt="" aria-hidden="true" loading="lazy">
+                    <span>Instagram</span>
                 </a>
-                <a href="https://www.linkedin.com/in/john-arron-mojico-13a795359">
-                    <img src="socials/linkedin.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/john-arron-mojico-13a795359" target="_blank" rel="noopener noreferrer" aria-label="Visit John Arron Mojico on LinkedIn">
+                    <img src="socials/linkedin.png" alt="" aria-hidden="true" loading="lazy">
+                    <span>LinkedIn</span>
                 </a>
             </div>
-        </section>
+            <p class="copyright">© <span id="year">2025</span> John Arron Mojico. Designed and developed by John Arron Mojico.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
